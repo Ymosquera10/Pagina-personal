@@ -1,0 +1,280 @@
+*{
+    box-sizing: border-box;
+}
+ 
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+    background-color: white;
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.5em;}
+ul{list-style: none;}
+
+button{
+    font-size:xx-large;
+    font-weight: bold ;
+    padding: 10p 20p ;
+    border-radius: 15px;
+    border: 2px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: blue;
+}
+button a{
+    color: white !important;
+    text-decoration-line: none;
+}
+
+button:hover{
+    background-color: rgb(127, 162, 233);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-color: rgb(245, 245, 245);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color:black;
+    font-size: 1.6em;
+
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+
+}
+header a:hover{
+    color: blue;
+}
+
+footer{
+    background-color: rgb(245, 245, 245);
+
+}
+
+footer p{
+    margin: 0px;
+    padding: 20px;
+    color:black;
+    padding: center;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+
+
+
+#Bienvenidos-a-mi-Web .container{
+      display: flex;
+      justify-content: center;
+
+}
+
+#Bienvenidos-a-mi-Web .texto{
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    text-align:justify;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    
+}
+#Bienvenidos-a-mi-Web .texto p{
+    margin-top: -30px;
+}
+
+#biografia .mi-biografia{
+    margin: 10px;
+}
+
+#biografia{
+    margin: 50px ;
+    padding: 80px;
+    margin-top: -30px;
+    text-align: justify;
+}
+
+#biografia h1{
+    text-align:unset;
+}
+
+#biografia p{
+    margin-top: -20px;
+}
+.mi-biografia{
+    margin: 100px;
+}
+
+#Bienvenidos-a-mi-Web .img-container{
+    background-image: url(Imagenes/yo.jpeg);
+    background-size: cover;
+    background-position: center center;
+    height: 600px;
+    width: 400px;
+
+    
+}
+
+#Bienvenidos-a-mi-Web .container{
+    text-align:justify;
+    padding: 70px 0px;
+}
+
+#Actividades-Favoritas{
+    background-color: rgba(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+.prueba{
+    margin: 50px ;
+    margin-top: 20px;
+}
+
+#Actividades-Favoritas .container{
+   padding: 0px 0px;
+   margin: 50px;
+   
+   
+}
+
+#Actividades-Favoritas h2{
+    margin-top: 0;
+    font-size: 3.2en;
+}
+
+#Actividades-Favoritas p{
+    display: none;
+}
+
+#Actividades-Favoritas .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 30px 30px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+       ,url(Imagenes/estu.jpeg);
+       
+    
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+       ,url(Imagenes/Champions-league.jpg);
+      
+
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+       ,url(Imagenes/musico.jpeg);
+       
+    
+}
+
+.carta:nth-child(4){
+     background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+       ,url(Imagenes/programacion\ .jpeg);
+       
+    
+}
+
+@media (min-width: 720px){
+    header{
+        position:relative;
+        width: 100%;
+    }
+       header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction:row;
+        padding-bottom: 0;
+        padding-right: 40px;
+
+    }
+}
+
+#Actividades-Favoritas .caracteristicas{
+    display: flex;
+    justify-content: center;
+}
+
+#Actividades-Favoritas p{
+    display: block;
+    margin-bottom: 30px;
+}
+
+#Actividades-Favoritas h3{
+    margin-top: 0;
+    text-align: justify;
+}
+
+#Actividades-Favoritas .carta{
+    padding: 60px;
+    text-align:start;
+}
